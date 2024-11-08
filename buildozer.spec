@@ -57,16 +57,16 @@ android.presplash_color = #444444
 android.api = 34
 
 # (int) Minimum API your APK / AAB will support.
-android.minapi = 32
+android.minapi = 28
 
 # (int) Android SDK version to use
-android.sdk = 34
+#android.sdk = 34
 
 # (str) Android NDK version to use
-android.ndk = 27
+#android.ndk = 27
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-android.ndk_api = 32
+#android.ndk_api = 32
 
 # (bool) If True, then automatically accept SDK license
 # agreements. This is intended for automation only. If set to False,
