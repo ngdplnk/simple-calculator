@@ -27,7 +27,7 @@ version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python,kivy,kivymd
+requirements = python3,kivy,kivymd
 
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/assets/presplash.png
