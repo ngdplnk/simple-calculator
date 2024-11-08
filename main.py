@@ -8,7 +8,7 @@ MDGridLayout:
     cols: 1
     rows: 2
     pos_hint: {'center_x': 0.5, 'center_y': 0.5}
-    size_hint: 0.8, 0.8
+    size_hint: 0.9, 0.9
     MDTextField:
         id: text_field
         hint_text: 'Your expression'
@@ -20,6 +20,8 @@ MDGridLayout:
         readonly: True
         mode: 'rectangle'
         font_size: '30sp'
+        focus: True
+        on_focus: self.focus = True
     MDGridLayout:
         rows: 5
         cols: 4
@@ -28,125 +30,145 @@ MDGridLayout:
         size_hint: 0.8, 0.8
         padding: [10, 30, 10, 10]
         spacing: [10, 10]
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: 'AC'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.clear_text_field()
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '('
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('(')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: ')'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press(')')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '^'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('**')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '7'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('7')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '8'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('8')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '9'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('9')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '*'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('*')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '4'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('4')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '5'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('5')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '6'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('6')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '-'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('-')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '1'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('1')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '2'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('2')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '3'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('3')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '+'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('+')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '0'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('0')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '.'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.on_button_press('.')
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: 'DEL'
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.backspace()
-        MDFillRoundFlatButton:
+        MDRoundFlatButton:
             text: '='
             font_size: '25sp'
             bold: True
             size_hint: 0.2, 0.2
+            padding: [30, 30, 30, 30]
             on_press: app.calculate()
 """
 
@@ -167,7 +189,6 @@ class Calculator(MDApp):
 
     def calculate(self):
         try:
-            # Evaluate the expression and update text field
             self.root.ids.text_field.text = str(eval(self.expression))
         except Exception as e:
             # Handle error cases, such as division by zero
