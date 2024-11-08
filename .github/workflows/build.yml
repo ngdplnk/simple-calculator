@@ -37,7 +37,9 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt install -y zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev build-essential cython virtualenv setuptools wheel kivy kivymd buildozer
+        sudo apt upgrade -y
+        sudo apt install -y zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev build-essential
+        pip install Cython virtualenv setuptools wheel kivy kivymd buildozer
 
     # Run buildozer
     - name: Run buildozer
